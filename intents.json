@@ -1,0 +1,148 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Hii"
+      ],
+      "responses": [
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "create_account",
+      "patterns": [
+       " How to create user account?","how do i create my account","how to start my account","need help with setting up account",
+       "how to make an account on your site"
+      ],
+      "responses": [
+       " -> Login MazoLenZ \n-> Open User Management \n-> Click Invite User button \n-> Enter email address \n-> Click Save button to send invite for join \n-> Then user have to login email account. And click join link which was received in email."
+      ]
+    },
+    {
+      "tag": "password",
+      "patterns": [
+        "How to reset my password?","i forgot my password, what do?","forgot password, please help",
+        "how to make new password?", "reset password"
+      ],
+      "responses": [
+        "-> Login to MazoLenZ \n-> Open Profile page \n-> Enter your new password and confirm password\n-> Click Save button to update account information"
+      ]
+    },
+    {
+      "tag": "teams",
+      "patterns": [
+        "How to create team?","help me create a team","do you know how to create a team?","how to add a team?"
+      ],
+      "responses": [
+        "-> Login MazoLenZ \n-> Open Team page \n-> Click Add button \n-> Enter Name and Description \n-> Click Save button to add a team"
+      ]
+    },
+    {
+      "tag": "members",
+      "patterns": [
+        " How to add member to team?","how to add a member to my team","help me with adding a member to my team"
+      ],
+      "responses": [
+        "-> Login MazoLenZ \n-> Open Team page \n-> Select a Team through Teams dropdown \n-> Click Actions and select Team Member \n-> Click Add button \n-> Type minimum 3 character and select team member \n-> Select member role \n-> Click Save button to add a team member to the team"
+      ]
+    },
+    {
+      "tag": "schedule",
+      "patterns": [
+        "how to add schedule to team?", "help me with scheduling in teams","i need to make a schedule for my team","i need to organize dates in teams", "i need to plan a timetable in team"
+      ],
+      "responses": [
+        "-> Login MazoLenZ \n-> Open Team page\n-> Select a Team through Teams dropdown\n-> Click Actions and select Team Schedule\n-> Click Add button\n-> Enter Name, Description and select Time Zone\n-> Click Save button to create new schedule to the team"
+      ]
+    },
+    {
+      "tag": "rotation",
+      "patterns": [
+        " How to add rotation to schedule?", "how to rotate my schedules","how to reorganize my schedule?","how to distribute schedules in between team members",
+        "scheduling for multiple members"
+      ],
+      "responses": [
+        "-> Login MazoLenZ \n-> Open Team page \n -> Select a Team through Teams dropdown\n-> Click Actions and select Team Schedule\n-> Expand schedule and click Add Rotation button\n-> Enter rotation name, description, start datetime, end datetime and select participants\n -> Click Save button to add rotation to the schedule"
+      ]
+    },
+    {
+      "tag": "color",
+      "patterns": [" How to set participant color in rotation?","how do i change color for team members","help me with setting colors for team members"],
+      "responses": [
+        "-> Login MazoLenZ \n-> Open Team page\n-> Select a Team through Teams dropdown\n-> Click Actions and select Team Schedule\n-> Expand schedule and click Add Rotation or Edit Rotation\n-> Click participant name\n-> Choose the color\n-> Click Save button to add or update the rotation"
+      ]
+    },
+    {
+      "tag": "escalation",
+      "patterns": ["How to add escalation rule?","how to escalate teams"],
+      "responses": ["-> Login MazoLenZ \n-> Open Team page\n-> Select a Team through Teams dropdown\n -> Click Actions and select Team Escalation\n-> Click Add button\n-> Enter Name, Escalate To, User, Alert action and Duration \n-> Click Save button to create new escalation to the team"]
+    },
+    {
+      "tag": "external_service",
+      "patterns": ["How to integrate external service like email, ms teams, Jira?","how to add services like email, ms teams, Jira and etc.,?","How to combine other services like email, ms teams, Jira and etc.,?", "how to integrate new services to mazolenz","how to integrate external services?"],
+      "responses": [
+        "-> Login MazoLenZ\n-> Open Team page\n-> Select a Team through Teams dropdown\n-> Click Actions and select Team Integration\n-> Click Add button\n-> Search integration type and select the service\n-> Enter integration id \n-> Click Save button to add new integration service to the team"
+      ]
+    },
+    {
+      "tag": "alert",
+      "patterns": ["how to create a new alert?","how to set an alert?","help me to ping alerts to my team?"],
+      "responses": [
+        "-> Login MazoLenZ\n-> Open Alert page\n-> Click Create Alert\n-> Enter Message, Priority, Team, Assigned To and Description\n-> Click Save button to create new alert"
+      ]
+    },
+
+    {
+      "tag": "acknowledge",
+      "patterns": ["How to acknowledge an alert?","how do i acknowledge my alerts","procedure for acknowledging alerts?"],
+      "responses": [
+        "-> Login MazoLenZ\n-> Open Alert page\n-> Select alert to perform action\n-> Click Action dropdown and then click Acknowledge"
+      ]
+    },
+    {
+      "tag": "alert_assign",
+      "patterns": ["How to assign an alert to team member?","how do i set alerts for my team members","procedure for assigning an alert to team member?","setting alerts for my team members","help me to allocate alrets to my team members"],
+      "responses": [
+        "-> Login MazoLenZ\n-> Open Alert page\n-> Select alert to perform action\n-> Click Action dropdown and then click Assign\n-> Select the assignee and enter the reason\n-> Click Save button to assign or reassign to other person in team"
+      ]
+    },
+    {
+      "tag": "cancel",
+      "patterns": [
+        "How to cancel an alert?","help me cancel an alert?","procedure for cancelling an alert?"
+      ],
+      "responses": [
+        "-> Login MazoLenZ\n-> Open Alert page\n-> Select alert to perform action\n-> Click Action dropdown and then click Cancel\n-> Enter the reason\n-> Click Save button to cancel alert"     ]
+    },
+    {
+      "tag": "escalate_alert",
+      "patterns": [
+        "How to escalate to next person for an alert?","escalating for alerts","how do i escalate someone for an alert?"
+      ],
+      "responses": [
+        "-> Login MazoLenZ\n-> Open Alert page\n-> Select alert to perform action\n-> Click Action dropdown and then click Escalate\n -> Select the escalete member and enter the reason\n-> Click Save button to escalate alert"     ]
+    }
+
+  ]
+}

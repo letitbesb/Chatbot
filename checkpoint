@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\shrey\\chatbot-deployment\\model.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\shrey\\chatbot-deployment\\model.tflearn"
